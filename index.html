@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Array Operations</title>
+</head>
+<body>
+  <h1>JavaScript Array Operations</h1>
+
+  <script>
+    // Task 1: Sort a JavaScript Array
+    let unsortedArray = [5, 3, 9, 1, 4];
+    let sortedArray = [...unsortedArray].sort((a, b) => a - b);
+    document.write("<h2>1. Sorted Array</h2>");
+    document.write("Original: " + unsortedArray + "<br>");
+    document.write("Sorted: " + sortedArray + "<br>");
+
+    // Task 2: Concatenate Two Arrays
+    let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+    let concatenatedArray = array1.concat(array2);
+    document.write("<h2>2. Concatenated Array</h2>");
+    document.write("Array 1: " + array1 + "<br>");
+    document.write("Array 2: " + array2 + "<br>");
+    document.write("Concatenated: " + concatenatedArray + "<br>");
+
+    // Task 3: Remove First Element from Array
+    let arrayToShift = [10, 20, 30, 40];
+    let removedElement = arrayToShift.shift();
+    document.write("<h2>3. Remove First Element from Array</h2>");
+    document.write("Removed Element: " + removedElement + "<br>");
+    document.write("Updated Array: " + arrayToShift + "<br>");
+  </script>
+</body>
+</html>
